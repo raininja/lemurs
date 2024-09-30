@@ -1,0 +1,10 @@
+[main]
+@type = classic
+@version = 0.3.3
+@description = "A customizable TUI display/login manager written in Rust" 
+@user = ( root )
+@timeout-kill = 3000
+
+[start]
+@execute = ( /usr/bin/lemurs )
+

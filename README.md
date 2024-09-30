@@ -6,7 +6,7 @@
 Lemurs is a *Terminal User Interface* (TUI) [Display/Login
 Managers](https://wiki.archlinux.org/title/Display_manager) written in Rust that
 works on most GNU/Linux and BSD distributions. It can work both
-*with or without* SystemD.
+*with or without* SystemD. This fork is for [Obarun Linux](http://web.obarun.org) or any distro running 66. 
 
 ## Goal
 
@@ -28,31 +28,28 @@ Installation follows three steps.
 2. Copy all files to correct positions
 3. Enable `init` process to run `lemurs`
 
-### Arch Linux
+### Obarun Linux 
 
-Lemurs can be installed from the [extra](https://archlinux.org/packages/?sort=&q=lemurs&maintainer=&flagged=) repository.
+Lemurs can be installed from the [obcommunity](http://web.obarun.org/index.php?id=140)  repository.
 
 ```bash
 sudo pacman -S lemurs
 
-# Not needed if you don't have a window manager yet
-sudo systemctl disable display-manager.service
-
-sudo systemctl enable lemurs.service
-```
 
 Alternatively, [lemurs-git](https://aur.archlinux.org/packages/lemurs-git) is available in the AUR.
 
 ### Compiling from source
 
-The `install.sh` script can be used to compile and setup the display manager on
+
+~~The `install.sh` script can be used to compile and setup the display manager on
 your Unix machine. This will perform multiple steps:
 
 1. Build the project in release mode (requires Rust's _cargo_)
 2. Setup the `/etc/lemurs` folder which contains some of the configuration and
    necessary files such as your selection of window managers.
 3. Disables the previous Display Manager
-4. Copies over the _systemd_ service and enables it.
+4. Copies over the _systemd_ service and enables it.~~
+
 
 Although you might first want to set up some window managers (see
 [Usage](#Usage)), upon rebooting you should now see Lemurs.
