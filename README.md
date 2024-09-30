@@ -40,15 +40,8 @@ Alternatively, [lemurs-git](https://aur.archlinux.org/packages/lemurs-git) is av
 
 ### Compiling from source
 
+On ArchLinux based distributions, the functionality of the install.sh script usually packaged with Lemurs is provided by the distro, or the PKGBUILD. 
 
-~~The `install.sh` script can be used to compile and setup the display manager on
-your Unix machine. This will perform multiple steps:
-
-1. Build the project in release mode (requires Rust's _cargo_)
-2. Setup the `/etc/lemurs` folder which contains some of the configuration and
-   necessary files such as your selection of window managers.
-3. Disables the previous Display Manager
-4. Copies over the _systemd_ service and enables it.~~
 
 
 Although you might first want to set up some window managers (see
@@ -196,8 +189,8 @@ want to tweak details for their own installation.
 |- extra: Configuration and extra files needed
 |  |- config.toml: The default configuration file
 |  |- xsetup.sh: Script used to setup a Xorg session
-|  |- lemurs.service: The systemd service used to start at boot
 |  |- lemurs.pam: PAM service configuration
+|  |- lemurs.66: The service  file for ArchLinux based distros running 66 
 ```
 
 ## Shell Keybindings
@@ -218,12 +211,8 @@ Lemurs has support for some basic shell keybindings.
 
 ## Platforms
 
-Tested on
-
-- ArchLinux (Vanilla, ArcoLinux)
-- VoidLinux
-- Ubuntu (make sure to install `build-essential` and `libpam-dev`)
-- OpenSUSE (make sure to install `pam` and `pam-devel`)
+This fork should install and function on any ArchLinux based distro that runs 66 as service supervisor. 
+It was packaged and tested on Obarun and Vanilla(ish) Arch. 
 
 ## MSRV Policy
 

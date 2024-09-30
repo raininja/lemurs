@@ -2,7 +2,7 @@
 name = "lemurs"
 authors = ["Gijs Burghoorn <me@gburghoorn.com>"]
 description = "A TUI Display/Login Manager"
-version = "0.3.3"
+version = "0.3.4"
 
 edition = "2021"
 
