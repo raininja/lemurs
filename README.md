@@ -34,7 +34,7 @@ Lemurs can be installed from the [obcommunity](http://web.obarun.org/index.php?i
 
 ```bash
 sudo pacman -S lemurs
-
+```
 
 Alternatively, [lemurs-git](https://aur.archlinux.org/packages/lemurs-git) is available in the AUR.
 
